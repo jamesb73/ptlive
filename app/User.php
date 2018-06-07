@@ -26,4 +26,9 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+
+    public function groups()
+    {
+        return $this->belongsToMany( Group::class, 'groups_users')->withPivot('is_admin');
+    }
 }

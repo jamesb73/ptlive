@@ -8,6 +8,7 @@
 require('./bootstrap');
 
 window.Vue = require('vue');
+window.$   = require('jquery');
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
@@ -16,6 +17,7 @@ window.Vue = require('vue');
  */
 
 Vue.component('pt-live', require('./components/pt-live.vue'));
+Vue.component('evil-test', require('./components/evil-test.vue'));
 
 const app = new Vue({
     el: '#app'

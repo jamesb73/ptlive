@@ -17,7 +17,7 @@
     </head>
     <body>
         <div id="app">
-            <pt-live></pt-live>
+            <evil-test></evil-test>
         </div>
     </body>
 </html>
